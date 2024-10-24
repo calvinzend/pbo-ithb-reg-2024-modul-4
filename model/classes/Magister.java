@@ -36,12 +36,12 @@ public class Magister extends Mahasiswa{
         for (MatkulAmbil mk : getList()) {
             mataKuliahStr.append(mk).append("\n");
         }
-        return "Nama : " + getNama() + "\n"
-                + "Alamat : " + getAlamat() + "\n"
+        return "Nama : " + getNama() + ", "
+                + "Alamat : " + getAlamat() + ", "
                 + "TTL : " + getTTL() + "\n"
-                + "Telepon : " + getTelepon() + "\n"
-                + "NIM : " + getNIM() + "\n"
-                + "Jurusan : " + getJurusan() + "\n"
+                + "Telepon : " + getTelepon() + ", "
+                + "NIM : " + getNIM() + ", "
+                + "Jurusan : " + getJurusan() + ", "
                 + "Judul Penelitian Tesis : " + getJudul_Penelitian_Tesis() + "\n"
                 + mataKuliahStr.toString();
     }

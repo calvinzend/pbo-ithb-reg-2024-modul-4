@@ -49,12 +49,12 @@ public class MatkulAmbil {
     public String toString() {
         StringBuilder presensiStr = new StringBuilder("Kehadiran:\n");
         for (Presensi p : getPresensi()) {
-            presensiStr.append("- ").append(p.getTanggal()+ " : ").append(p.getStatus()).append("\n");
+            presensiStr.append(p.getTanggal()+ " : ").append(p.getStatus()).append(", ");
         }
     
-        return "Nilai 1: " + getN1() + "\n" 
-             + "Nilai 2: " + getN2() + "\n" 
-             + "Nilai 3: " + getN3() + "\n" 
+        return "Nilai 1: " + getN1() + ", " 
+             + "Nilai 2: " + getN2() + ", " 
+             + "Nilai 3: " + getN3() + " " 
              + presensiStr
              + "Mata Kuliah: " + getMatkul();
     }

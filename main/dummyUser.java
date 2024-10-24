@@ -83,11 +83,7 @@ public class dummyUser {
         ArrayList<MatkulAmbil> matkulAmbilList = new ArrayList<>();
         matkulAmbilList.add(new MatkulAmbil(random.nextInt(80,101), random.nextInt(80,101), random.nextInt(80,101), getPresensiList(), mataKuliahs.get(0)));
         matkulAmbilList.add(new MatkulAmbil(random.nextInt(80,101), random.nextInt(80,101), random.nextInt(80,101), getPresensiList(), mataKuliahs.get(1)));
-        matkulAmbilList.add(new MatkulAmbil(random.nextInt(80,101), random.nextInt(80,101), random.nextInt(80,101), getPresensiList(), mataKuliahs.get(2)));
-        matkulAmbilList.add(new MatkulAmbil(random.nextInt(80,101), random.nextInt(80,101), random.nextInt(80,101), getPresensiList(), mataKuliahs.get(3)));
-        matkulAmbilList.add(new MatkulAmbil(random.nextInt(80,101), random.nextInt(80,101), random.nextInt(80,101), getPresensiList(), mataKuliahs.get(4)));
-        matkulAmbilList.add(new MatkulAmbil(random.nextInt(80,101), random.nextInt(80,101), random.nextInt(80,101), getPresensiList(), mataKuliahs.get(5)));
-        matkulAmbilList.add(new MatkulAmbil(random.nextInt(80,101), random.nextInt(80,101), random.nextInt(80,101), getPresensiList(), mataKuliahs.get(6)));
+       
         return matkulAmbilList;
     }
 

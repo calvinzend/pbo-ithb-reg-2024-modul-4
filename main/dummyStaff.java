@@ -78,9 +78,7 @@ public class dummyStaff {
         return karyawans;
     }
 
-    public static void main(String[] args) {
-
-        //DATA DUMMY DOSEN TETAP
+    public static ArrayList<Dosen> getDosenTetaps(){
         ArrayList<Dosen> dosenTetap = new ArrayList<>();
         Dosen dosenT1 = new DosenTetap("Dr. Andi Budiman","Jalan Setiabudi 10", "12/05/1975", "081234567890", "D001", "Informatika", getMatkulAjar1(),3000000);
         Dosen dosenT2 = new DosenTetap("Dr. Hans, S.Kom, M.Kom","Jalan Ujung Berung 10", "12/05/2000", "081234567890", "D002", "Informatika", getMatkulAjar2(),3000000);
@@ -89,11 +87,10 @@ public class dummyStaff {
         dosenTetap.add(dosenT2);
         dosenTetap.add(dosenT3);
 
-        System.out.println("Daftar Dosen Tetap:");
-        for (Dosen dosen : dosenTetap) {
-            System.out.println(dosen.toString());
-        }
+        return dosenTetap;
+    }
 
+    public static ArrayList<Dosen> getDosenHonorer(){
         ArrayList<Dosen> dosenHonorer = new ArrayList<>();
         Dosen dosenH1 = new DosenHonorer("Juvi S.Kom, M.Kom", "Jalan antapani","8/8/2004","084545445452","H001","Informatika", getMatkulAjar4(),15000);
         Dosen dosenH2 = new DosenHonorer("Mattwew S.Kom, M.Kom", "Jalan antapani","8/8/2004","084545445452","H002","Informatika",getMatkulAjar5(),15000);
@@ -103,6 +100,21 @@ public class dummyStaff {
         dosenHonorer.add(dosenH2);
         dosenHonorer.add(dosenH3);
 
+        return dosenHonorer;
+    }
+
+    public static void main(String[] args) {
+
+        //DATA DUMMY DOSEN TETAP
+        ArrayList<Dosen> dosenTetap = getDosenTetaps();
+
+        System.out.println("Daftar Dosen Tetap:");
+        for (Dosen dosen : dosenTetap) {
+            System.out.println(dosen.toString());
+        }
+
+        
+        ArrayList<Dosen> dosenHonorer = getDosenHonorer();
 
         System.out.println("Daftar Dosen Honorer:");
         for (Dosen dosen : dosenHonorer) {
