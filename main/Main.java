@@ -11,6 +11,9 @@ public class Main {
         PrintNAView view2 = new PrintNAView();
         PrintNA nilaiNA = new PrintNA(view2);
 
+        PrintNRView view3 = new PrintNRView();
+        PrintNR nilaiNR = new PrintNR(view3); 
+
         //Tampilkan DATA USER
         // userData.tampilkanDataDosenTetap();
         // userData.tampilkanDataDosenHonorer();
@@ -18,8 +21,9 @@ public class Main {
         // userData.tampilkanDataDoktor();
         // userData.tampilkanDataMagister();
 
-        nilaiNA.cariNIMdanMK();
+        // nilaiNA.cariNIMdanMK();
 
+        nilaiNR.nilaiNR();
 
         
     }

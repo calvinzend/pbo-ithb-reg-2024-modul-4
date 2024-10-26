@@ -61,7 +61,7 @@ public class PrintNA {
         }
         return -1; 
     }
-    // Fungsi untuk menghitung rata-rata 3 nilai
+
     private double hitungRataRata(double n1, double n2, double n3) {
         return (n1 + n2 + n3) / 3;
     }
