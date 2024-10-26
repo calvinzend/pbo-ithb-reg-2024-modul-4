@@ -22,10 +22,7 @@ public class PresensiStaff extends Presensi {
 
     @Override
     public String toString() {
-        return "PresensiStaff{" +
-                "tanggal=" + getTanggal() +
-                ", status=" + getStatus() +
-                ", jam=" + jam +
-                '}';
+        return "Presensi : tanggal=" + getTanggal() + ", status=" + getStatus() +
+                ", jam=" + jam;
     }
 }

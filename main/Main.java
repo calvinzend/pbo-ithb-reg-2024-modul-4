@@ -8,9 +8,14 @@ public class Main {
         UserDataView view = new UserDataView();
         UserData controller = new UserData(view);
 
+        //Tampilkan DATA USER
         // controller.tampilkanDataDosenTetap();
         // controller.tampilkanDataDosenHonorer();
+        // controller.tampilkanDataKaryawan();
         // controller.tampilkanDataDoktor();
         // controller.tampilkanDataMagister();
+
+
+        
     }
 }

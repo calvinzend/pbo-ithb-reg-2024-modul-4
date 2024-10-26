@@ -25,13 +25,13 @@ public class DosenTetap extends Dosen{
             mataKuliahStr.append("- ").append(mk).append("\n");
         }
 
-        return "Nama: " + getNama() + "\n"
-                + "Alamat: " + getAlamat() + "\n"
-                + "Tanggal Lahir: " + getTTL() + "\n"
-                + "Telepon: " + getTelepon() + "\n"
-                + "NIDN: " + getNIK() + "\n"
-                + "Departemen: " + getDepartemen() + "\n"
-                + "Gaji: " + getSalary() + "\n"
+        return "Nama: " + getNama() + ", "
+                + "Alamat: " + getAlamat() + ", "
+                + "Tanggal Lahir: " + getTTL() + ", "
+                + "Telepon: " + getTelepon() + ", "
+                + "NIDN: " + getNIK() + ", "
+                + "Departemen: " + getDepartemen() + ", "
+                + "Gaji: " + getSalary() + ", "
                 + mataKuliahStr;
     }
 }

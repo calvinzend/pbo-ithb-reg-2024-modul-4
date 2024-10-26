@@ -28,15 +28,12 @@ public class MatkulAjar {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("MatkulAjar {\n");
-        sb.append(" ").append(matkul).append("\n");
-        sb.append("  Presensi:\n");
+        sb.append(" ").append(matkul).append(", ");
+        sb.append("  Presensi: ");
         for (PresensiStaff p : presensi) {
             sb.append("    ").append(p.getJam()).append(",\n");
             sb.append("    ").append(p.getTanggal()).append(",\n");
         }
-        sb.append("\n");
-        sb.append("}");
         return sb.toString();
     }
 

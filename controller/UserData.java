@@ -16,6 +16,7 @@ public class UserData {
     private HashMap<Integer, Doktor> doktorList;
     private ArrayList<Dosen> dosenTetapList;
     private ArrayList<Dosen> dosenHonorerList;
+    private ArrayList<Karyawan> karyawanList;
     private UserDataView userDataView;
 
     public UserData(UserDataView userDataView) {
@@ -25,6 +26,7 @@ public class UserData {
         this.doktorList = dummyUser.getDoktorList();
         this.dosenTetapList = dummyStaff.getDosenTetaps();
         this.dosenHonorerList = dummyStaff.getDosenHonorer();
+        this.karyawanList = dummyStaff.getKaryawans();
     }
 
     public void tampilkanDataSarjana() {
@@ -32,7 +34,7 @@ public class UserData {
 
         data.append("--- Data Sarjana ---\n");
         for (Sarjana sarjana : sarjanaList.values()) {
-            data.append(sarjana.toString()).append("\n\n");
+            data.append(sarjana.toString()).append("\n");
         }
 
         userDataView.tampilkanPesan(data);
@@ -42,17 +44,18 @@ public class UserData {
 
         data.append("--- Data Magister ---\n");
         for (Magister magister : magisterList.values()) {
-            data.append(magister.toString()).append("\n\n");
+            data.append(magister.toString()).append("\n");
         }
 
         userDataView.tampilkanPesan(data);
     }
+    
     public void tampilkanDataDoktor() {
         StringBuilder data = new StringBuilder();
 
         data.append("--- Data Doktor ---\n");
         for (Doktor doktor : doktorList.values()) {
-            data.append(doktor.toString()).append("\n\n");
+            data.append(doktor.toString()).append("\n");
         }
         userDataView.tampilkanPesan(data);
     }
@@ -62,7 +65,7 @@ public class UserData {
 
         data.append("--- Data Dosen Tetap ---\n");
         for (Dosen dosen : dosenTetapList) {
-            data.append(dosen.toString()).append("\n\n");
+            data.append(dosen.toString()).append("\n");
         }
         userDataView.tampilkanPesan(data);
     }
@@ -72,7 +75,17 @@ public class UserData {
 
         data.append("--- Data Dosen Tetap ---\n");
         for (Dosen dosen : dosenHonorerList) {
-            data.append(dosen.toString()).append("\n\n");
+            data.append(dosen.toString()).append("\n");
+        }
+        userDataView.tampilkanPesan(data);
+    }
+
+    public void tampilkanDataKaryawan() {
+        StringBuilder data = new StringBuilder();
+
+        data.append("--- Data Karyawan ---\n");
+        for (Karyawan karyawan : karyawanList) {
+            data.append(karyawan.toString()).append("\n");
         }
         userDataView.tampilkanPesan(data);
     }

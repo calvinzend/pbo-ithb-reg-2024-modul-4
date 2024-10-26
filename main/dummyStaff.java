@@ -82,10 +82,10 @@ public class dummyStaff {
         ArrayList<Dosen> dosenTetap = new ArrayList<>();
         Dosen dosenT1 = new DosenTetap("Dr. Andi Budiman","Jalan Setiabudi 10", "12/05/1975", "081234567890", "D001", "Informatika", getMatkulAjar1(),3000000);
         Dosen dosenT2 = new DosenTetap("Dr. Hans, S.Kom, M.Kom","Jalan Ujung Berung 10", "12/05/2000", "081234567890", "D002", "Informatika", getMatkulAjar2(),3000000);
-        Dosen dosenT3 = new DosenTetap("Dr. Stefan, S.Kom, M.T","Jalan Cijerah 10", "12/05/1985", "081234567890", "D004", "Informatika", getMatkulAjar3(),3000000);
+        // Dosen dosenT3 = new DosenTetap("Dr. Stefan, S.Kom, M.T","Jalan Cijerah 10", "12/05/1985", "081234567890", "D004", "Informatika", getMatkulAjar3(),3000000);
         dosenTetap.add(dosenT1);
         dosenTetap.add(dosenT2);
-        dosenTetap.add(dosenT3);
+        // dosenTetap.add(dosenT3);
 
         return dosenTetap;
     }
