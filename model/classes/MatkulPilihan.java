@@ -7,7 +7,7 @@ public class MatkulPilihan extends MataKuliah{
         super(kode, nama, sks);
         this.minimumMHS = minimumMHS;
     }
-
+    
     public int getMinimumMHS() {
         return minimumMHS;
     }

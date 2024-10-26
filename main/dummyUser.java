@@ -90,14 +90,14 @@ public class dummyUser {
     public static HashMap<Integer, Sarjana> getSarjanaList(ArrayList<MatkulAmbil> matkulAmbilList) {
         HashMap<Integer, Sarjana> mhsSarjana = new HashMap<>();
 
-        mhsSarjana.put(0, new Sarjana("Joseph", "Jalan Cijerah nomer 90", "29/8/2004",
+        mhsSarjana.put(1123021, new Sarjana("Joseph", "Jalan Cijerah nomer 90", "29/8/2004",
                 "085703845949", "1123021", "Informatika", matkulAmbilList));
-        mhsSarjana.put(1, new Sarjana("Alexas", "Jalan TKI V", "2/2/2004",
+        mhsSarjana.put(1123038, new Sarjana("Alexas", "Jalan TKI V", "2/2/2004",
                 "085703845949", "1123038", "Informatika", matkulAmbilList));
-        mhsSarjana.put(2, new Sarjana("Tythan", "Jalan DU V", "2/6/2004",
-                "085703845949", "1123038", "Informatika", matkulAmbilList));
-        mhsSarjana.put(3, new Sarjana("Adhyo", "Jalan DU V", "2/8/2004",
-                "085703845949", "1123038", "Informatika", matkulAmbilList));
+        mhsSarjana.put(1123034, new Sarjana("Tythan", "Jalan DU V", "2/6/2004",
+                "085703845949", "1123034", "Informatika", matkulAmbilList));
+        mhsSarjana.put(1123036, new Sarjana("Adhyo", "Jalan DU V", "2/8/2004",
+                "085703845949", "1123036", "Informatika", matkulAmbilList));
 
         return mhsSarjana;
     }
@@ -105,13 +105,13 @@ public class dummyUser {
     public static HashMap<Integer, Magister> getMagisterList(ArrayList<MatkulAmbil> matkulAmbilList) {
         HashMap<Integer, Magister> mhsMagister = new HashMap<>();
 
-        mhsMagister.put(0, new Magister("Boston E. Manalu", "Jalan Cileunyi nomer 80",
+        mhsMagister.put(1123039, new Magister("Boston E. Manalu", "Jalan Cileunyi nomer 80",
                 "14/12/2004", "085703845949", "1123039", "Informatika",
                 matkulAmbilList, "Kenapa BFS Menggunakan Queue"));
-        mhsMagister.put(1, new Magister("Felix", "Jalan Peta nomer 10", "17/9/2004",
+        mhsMagister.put(1123042, new Magister("Felix", "Jalan Peta nomer 10", "17/9/2004",
                 "085703845949", "1123042", "Informatika",
                 matkulAmbilList, "Algoritma DFS apakah bisa digunakan dalam kehidupan."));
-        mhsMagister.put(2, new Magister("Jonathan Paul", "Jalan Peta nomer 10",
+        mhsMagister.put(1123015, new Magister("Jonathan Paul", "Jalan Peta nomer 10",
                 "17/6/2005", "085703845949", "1123015", "Informatika",
                 matkulAmbilList, "Apakah AI jahat?"));
 
@@ -121,11 +121,11 @@ public class dummyUser {
     public static HashMap<Integer, Doktor> getDoktorList() {
         HashMap<Integer, Doktor> mhsDoktor = new HashMap<>();
 
-        mhsDoktor.put(0, new Doktor("Calvin Estanto Zendrato",
+        mhsDoktor.put(1123040, new Doktor("Calvin Estanto Zendrato",
                 "Jalan Bojong Malaka Indah nomer 50", "15/9/2004", "085703845949",
                 "1123040", "Informatika", "Mengapa ChatGPT sangat menyeramkan",
                 90, 80, 92));
-        mhsDoktor.put(1, new Doktor("Juan", "Jalan TKI nomer 50", "21/8/2004",
+        mhsDoktor.put(1123048, new Doktor("Juan", "Jalan TKI nomer 50", "21/8/2004",
                 "085703845949", "1123048", "Informatika", "Mengapa ChatGPT sangat pintar",
                 90, 80, 92));
 
