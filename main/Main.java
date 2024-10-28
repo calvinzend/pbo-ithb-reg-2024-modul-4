@@ -14,17 +14,22 @@ public class Main {
         PrintNRView view3 = new PrintNRView();
         PrintNR nilaiNR = new PrintNR(view3); 
 
+        PrintMatkulAmbilView view4 = new PrintMatkulAmbilView();
+        PrintMatkulAmbil matkulAmbil = new PrintMatkulAmbil(view4);
+
         //Tampilkan DATA USER
         // userData.tampilkanDataDosenTetap();
         // userData.tampilkanDataDosenHonorer();
         // userData.tampilkanDataKaryawan();
         // userData.tampilkanDataDoktor();
         // userData.tampilkanDataMagister();
+        // userData.tampilkanDataSarjana();
 
         // nilaiNA.cariNIMdanMK();
 
-        nilaiNR.nilaiNR();
+        // nilaiNR.nilaiNR();
 
+        // matkulAmbil.PrintMK();
         
     }
 }

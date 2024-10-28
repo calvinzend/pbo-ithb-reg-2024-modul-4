@@ -35,7 +35,7 @@ public class PrintNR {
         if (i != -1) {
             hasil /= sarjanaList.size();
         }
-            printNRView.tamplikanNilaiNR(hasil, kode);
+        printNRView.tamplikanNilaiNR(hasil, kode);
     }
 
     public double nilaiMagister(String kode){
@@ -52,7 +52,6 @@ public class PrintNR {
         }
 
         hasil /= magisterList.size();
-
         return hasil;
     }
 
