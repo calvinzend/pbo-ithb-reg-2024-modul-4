@@ -2,6 +2,7 @@ package modul4.main;
 
 import modul4.view.*;
 import modul4.controller.*;
+import java.time.LocalTime;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,6 +20,9 @@ public class Main {
 
         PrintGajiView printGajiView = new PrintGajiView();
         PrintGaji printGaji = new PrintGaji(printGajiView);
+
+        PrintJamView printJamView = new PrintJamView();
+        PrintJam printJam = new PrintJam(printJamView);
 
         //Tampilkan DATA USER
         // userData.tampilkanDataDosenTetap();
@@ -38,5 +42,6 @@ public class Main {
         // printGaji.gajiDosenTetap();
         // printGaji.gajiDosenHonorer();
         
+        // printJam.totalJam();
     }
 }
