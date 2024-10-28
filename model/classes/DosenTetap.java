@@ -29,7 +29,7 @@ public class DosenTetap extends Dosen{
                 + "Alamat: " + getAlamat() + ", "
                 + "Tanggal Lahir: " + getTTL() + ", "
                 + "Telepon: " + getTelepon() + ", "
-                + "NIDN: " + getNIK() + ", "
+                + "NIK: " + getNIK() + ", "
                 + "Departemen: " + getDepartemen() + ", "
                 + "Gaji: " + getSalary() + ", "
                 + mataKuliahStr;

@@ -17,6 +17,9 @@ public class Main {
         PrintMatkulAmbilView view4 = new PrintMatkulAmbilView();
         PrintMatkulAmbil matkulAmbil = new PrintMatkulAmbil(view4);
 
+        PrintGajiView printGajiView = new PrintGajiView();
+        PrintGaji printGaji = new PrintGaji(printGajiView);
+
         //Tampilkan DATA USER
         // userData.tampilkanDataDosenTetap();
         // userData.tampilkanDataDosenHonorer();
@@ -30,6 +33,10 @@ public class Main {
         // nilaiNR.nilaiNR();
 
         // matkulAmbil.PrintMK();
+
+        // printGaji.gajiKaryawan();
+        // printGaji.gajiDosenTetap();
+        // printGaji.gajiDosenHonorer();
         
     }
 }
