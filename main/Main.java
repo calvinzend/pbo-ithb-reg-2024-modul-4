@@ -93,6 +93,7 @@ public class Main {
                 break;
             case 0:
                 JOptionPane.showMessageDialog(null, "Program Berhenti.");
+                System.exit(0);
                 break;
             default:
                 menu();

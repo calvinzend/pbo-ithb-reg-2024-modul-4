@@ -9,7 +9,7 @@ public class PrintJumlahMhsView {
 
     public void tampilkanOutput(int gagal,int banyak, String MK) {
         JOptionPane.showMessageDialog(
-            null, "Nama : " + gagal+ "\nJam ngajar : "+
+            null, "Banyak : " + gagal+ " dari  "+ banyak + " Mahasiswa dari Kode MataKuliah : "+ 
             MK, 
             "Jam ngajar", 
             JOptionPane.INFORMATION_MESSAGE

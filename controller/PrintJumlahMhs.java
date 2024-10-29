@@ -22,8 +22,8 @@ public class PrintJumlahMhs {
 
     public void kelulusan(){
         String kodeMK = printJumlahMhsView.inputMK();
-        int count=0;
-        Boolean masuk = false;
+        int count = 0 ;
+        int count1 = 0 ;
 
         for (Sarjana sarjana : sarjanaList.values()) {
             int index = cariMataKuliah(sarjana.getMatkulAmbilList(), kodeMK);
@@ -42,14 +42,18 @@ public class PrintJumlahMhs {
                 MatkulAmbil mk = magister.getList().get(index);
                 double nilaiAkhir   = hitungRataRata(mk.getN1(), mk.getN2(), mk.getN3());
                 if (nilaiAkhir < 56) {
-                    count++;
+                    count1++;
                 }
             }
         }
-        if (count==0) {
+        if (count==0 && count1 == 0) {
             printJumlahMhsView.tampilkanError();
         }else{
-            printJumlahMhsView.tampilkanOutput(count,(magisterList.size()+sarjanaList.size()), kodeMK);
+            if (count != 0) {
+                printJumlahMhsView.tampilkanOutput(count,(sarjanaList.size()), kodeMK);
+            }else{
+                printJumlahMhsView.tampilkanOutput(count,(magisterList.size()), kodeMK);
+            }
         }
 
 
