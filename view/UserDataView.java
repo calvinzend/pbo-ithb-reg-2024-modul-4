@@ -11,4 +11,9 @@ public class UserDataView {
             JOptionPane.INFORMATION_MESSAGE
         );
     }
+
+    public String inputNama() {
+        return JOptionPane.showInputDialog("Masukkan Nama : ");
+    }
+
 }

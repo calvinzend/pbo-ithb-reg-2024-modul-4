@@ -31,20 +31,26 @@ public class UserData {
 
     public void tampilkanDataSarjana() {
         StringBuilder data = new StringBuilder();
+        String nama = userDataView.inputNama();
 
         data.append("--- Data Sarjana ---\n");
         for (Sarjana sarjana : sarjanaList.values()) {
-            data.append(sarjana.toString()).append("\n");
+            if (nama.equalsIgnoreCase(sarjana.getNama())) {
+                data.append(sarjana.toString()).append("\n");
+            }
         }
 
         userDataView.tampilkanPesan(data);
     }
     public void tampilkanDataMagister() {
         StringBuilder data = new StringBuilder();
+        String nama = userDataView.inputNama();
 
         data.append("--- Data Magister ---\n");
         for (Magister magister : magisterList.values()) {
-            data.append(magister.toString()).append("\n");
+            if (nama.equalsIgnoreCase(magister.getNama())) {
+                data.append(magister.toString()).append("\n");
+            }
         }
 
         userDataView.tampilkanPesan(data);
@@ -52,6 +58,7 @@ public class UserData {
     
     public void tampilkanDataDoktor() {
         StringBuilder data = new StringBuilder();
+        String nama = userDataView.inputNama();
 
         data.append("--- Data Doktor ---\n");
         for (Doktor doktor : doktorList.values()) {
@@ -62,30 +69,39 @@ public class UserData {
 
     public void tampilkanDataDosenTetap() {
         StringBuilder data = new StringBuilder();
+        String nama = userDataView.inputNama();
 
         data.append("--- Data Dosen Tetap ---\n");
         for (Dosen dosen : dosenTetapList) {
-            data.append(dosen.toString()).append("\n");
+            if (nama.equalsIgnoreCase(dosen.getNama())) {
+                data.append(dosen.toString()).append("\n");
+            }
         }
         userDataView.tampilkanPesan(data);
     }
 
     public void tampilkanDataDosenHonorer() {
         StringBuilder data = new StringBuilder();
+        String nama = userDataView.inputNama();
 
-        data.append("--- Data Dosen Tetap ---\n");
+        data.append("--- Data Dosen Honorer ---\n");
         for (Dosen dosen : dosenHonorerList) {
-            data.append(dosen.toString()).append("\n");
+            if (nama.equalsIgnoreCase(dosen.getNama())) {
+                data.append(dosen.toString()).append("\n");
+            }
         }
         userDataView.tampilkanPesan(data);
     }
 
     public void tampilkanDataKaryawan() {
         StringBuilder data = new StringBuilder();
+        String nama = userDataView.inputNama();
 
         data.append("--- Data Karyawan ---\n");
         for (Karyawan karyawan : karyawanList) {
-            data.append(karyawan.toString()).append("\n");
+            if (nama.equalsIgnoreCase(karyawan.getNama())) {
+                data.append(karyawan.toString()).append("\n");
+            }
         }
         userDataView.tampilkanPesan(data);
     }
